@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funko Pop Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js"> crossorigin-"anonymous"</script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <section id="landing">
+    <nav>
+        <div class="nav__container">
+            <img class="logo" src="./assets/Funkologo.png" alt="">
+            <ul class="nav__links">
+                <li><a href="#" class="nav__link">Home</a></li>
+                <li><a href=""class="nav__link">Contact</a></li>
+                <li><a href="#features"class="nav__link nav__link--primary" >Funko Pops</a></li>
+            </ul>
+        <button class="btn__menu" onclick="openMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="menu__backdrop">
+          <button class="btn__menu btn__menu--close"  onclick="closeMenu()">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul class="menu__links">
+            <li class="menu__list"> <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
+            </li>
+            <li class="menu__list"> <a href="#features" class="menu__link" onclick="closeMenu()">Funko Pops</a>
+            </li>
+            <li class="menu__list"> <a href="#" class="menu__link no-cursor" onclick="closeMenu()">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+        <header>
+            <div class="header__container">
+                <div class="header__description">
+                    <h1>Canada's #1 Funko Pop Store</h1>
+                    <h2>Find all your dream <span class="purple">Funko Pop</span></h2>
+                    <a href="#features">
+                    <button class="btn"> Browse Funko Pops</button>
+                    </a>
+                </div>
+                <figure class="header__img_wrapper">
+                    <img class="img__wall" src="./assets/funko_wallpaper.jpg" alt="">
+                </figure>
+            </div>
+        </header>
+    </section>
+
+    <main>
+        <section id="highlights">
+          <div class="container">
+            <div class="row">
+              <h2 class="section__title">
+                Why choose Alex's <span class="purple">Funko Pop</span> Store
+              </h2>
+              <div class="highlight__wrapper">
+                <div class="highlight">
+                  <div class="highlight__img">
+                    <i class="fas fa-bolt"></i>
+                  </div>
+                  <h3 class="highlight__subtitle">
+                    Easy and Quick
+                  </h3>
+                  <p class="highlight__para">
+                    Orders ship within 2 hours of purchase
+                  </p>
+                </div>
+                <div class="highlight">
+                  <div class="highlight__img">
+                    <i class="fas fa-snowman"></i>
+                  </div>
+                  <h3 class="highlight__subtitle">
+                    10,000+ Funko Pops
+                  </h3>
+                  <p class="highlight__para">
+                    Store has all Funko Pops in all categories
+                  </p>
+                </div>
+                <div class="highlight">
+                  <div class="highlight__img">
+                    <i class="fas fa-tags"></i>
+                  </div>
+                  <h3 class="highlight__subtitle">
+                    Affordable
+                  </h3>
+                  <p class="highlight__para">
+                    Get your hands on popular Funko Pop with discount codes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+         <section id="recent">
+            <div class="container">
+                 <div class="row">
+                    <h2 class="section__title">
+                      Top selling <span class="purple">Funko Pops</span>
+                    </h2>
+                    <div class="funkos">
+                      <div class="funko">
+                        <figure class="funko__img--wrapper">
+                          <img class="funko__img" src="./assets/spiderman_funko.jpg" alt="">
+                        </figure>
+                        <div class="funko__title">
+                         Spider-Man #222
+                        </div>
+                        <div class="funko__ratings">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="funko__price">
+                          <span class="funko__price--normal">$24.99</span> $15.99
+                        </div>
+                      </div>
+                      <div class="funko">
+                        <figure class="funko__img--wrapper">
+                          <img class="funko__img" src="./assets/batman_funko.jpg" alt="">
+                        </figure>
+                        <div class="funko__title">
+                          Batman #71
+                        </div>
+                        <div class="funko__ratings">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="funko__price">
+                          <span class="funko__price--normal">$32.99</span> $19.99
+                        </div>
+                      </div>
+                      <div class="funko">
+                        <figure class="funko__img--wrapper">
+                          <img class="funko__img" src="./assets/spongebob_funko.jpg" alt="">
+                        </figure>
+                        <div class="funko__title">
+                          Spongebob #561
+                        </div>
+                        <div class="funko__ratings">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="funko__price">
+                          <span class="funko__price--normal">$55.99</span> $29.99
+                        </div>
+                      </div>
+                      <div class="funko">
+                        <figure class="funko__img--wrapper">
+                          <img class="funko__img" src="./assets/starfire_funko.jpg" alt="">
+                        </figure>
+                        <div class="funko__title">
+                          Starfire #111
+                        </div>
+                        <div class="funko__ratings">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="funko__price">
+                          <span class="funko__price--normal">$65.99</span> $39.99
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>  
+        <section id="features">
+          <div class="container">
+               <div class="row">
+                  <h2 class="section__title">
+                    Features <span class="purple">Funko Pops</span>
+                  </h2>
+                  <div class="funkos">
+                    <div class="funko">
+                      <figure class="funko__img--wrapper">
+                        <img class="funko__img" src="./assets/nightwing_funko.png" alt="">
+                      </figure>
+                      <div class="funko__title">
+                        Nightwing #580
+                      </div>
+                      <div class="funko__ratings">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                      </div>
+                      <div class="funko__price">
+                        <span class="funko__price--normal">$79.99</span> $25.99
+                      </div>
+                    </div>
+                    <div class="funko">
+                      <figure class="funko__img--wrapper">
+                        <img class="funko__img" src="./assets/tracer_funko.png" alt="">
+                      </figure>
+                      <div class="funko__title">
+                        Tracer #550
+                      </div>
+                      <div class="funko__ratings">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <div class="funko__price">
+                        <span class="funko__price--normal">$19.99</span> $15.99
+                      </div>
+                    </div>
+                    <div class="funko">
+                      <figure class="funko__img--wrapper">
+                        <img class="funko__img" src="./assets/Ryu_funko.png" alt="">
+                      </figure>
+                      <div class="funko__title">
+                        Ryu #137
+                      </div>
+                      <div class="funko__ratings">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                      </div>
+                      <div class="funko__price">
+                        <span class="funko__price--normal">$19.99</span> $5.99
+                      </div>
+                    </div>
+                    <div class="funko">
+                      <figure class="funko__img--wrapper">
+                        <img class="funko__img" src="./assets/sombra_funko.png" alt="">
+                      </figure>
+                      <div class="funko__title">
+                        Sombra #307
+                      </div>
+                      <div class="funko__ratings">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                      </div>
+                      <div class="funko__price">
+                        <span class="funko__price--normal">$29.99</span> $19.99
+                      </div>
+                    </div>
+                    <div class="funko">
+                      <figure class="funko__img--wrapper">
+                        <img class="funko__img" src="./assets/green_funko.png" alt="">
+                      </figure>
+                      <div class="funko__title">
+                        Green Latern #107
+                      </div>
+                      <div class="funko__ratings">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <div class="funko__price">
+                        <span class="funko__price--normal">$39.99</span> $12.99
+                      </div>
+                    </div>
+                    <div class="funko">
+                      <figure class="funko__img--wrapper">
+                        <img class="funko__img" src="./assets/white_funko.png" alt="">
+                      </figure>
+                      <div class="funko__title">
+                        White Latern #237
+                      </div>
+                      <div class="funko__ratings">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                      </div>
+                      <div class="funko__price">
+                        <span class="funko__price--normal">$19.99</span> $15.99
+                      </div>
+                    </div>
+                    <div class="funko">
+                      <figure class="funko__img--wrapper">
+                        <img class="funko__img" src="./assets/maleficent_funko.png" alt="">
+                      </figure>
+                      <div class="funko__title">
+                        Maleficent #232
+                      </div>
+                      <div class="funko__ratings">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                      </div>
+                      <div class="funko__price">
+                        <span class="funko__price--normal">$59.99</span> $45.99
+                      </div>
+                    </div>
+                    <div class="funko">
+                      <figure class="funko__img--wrapper">
+                        <img class="funko__img" src="./assets/raven_funko.png" alt="">
+                      </figure>
+                      <div class="funko__title">
+                        Raven #108
+                      </div>
+                      <div class="funko__ratings">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <div class="funko__price">
+                        <span class="funko__price--normal">$9.99</span> $5.99
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div> 
+          <section id="explore">
+            <div class="row row__column">
+              <h2>Explore more <span class="purple">Funko Pops</span></h2>
+            <a href="#features">
+              <button class="btn">Browse funkos</button>
+            </a>
+            </div>
+          </section>  
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="row row__column">
+        <a href="#">
+          <figure class="footer__logo">
+            <img src="./assets/Funkologo.png" class="footer__logo--img" alt="">
+          </figure>
+        </a>
+        <div class="footer__list">
+          <a href="" class="footer__link">Home</a>
+          <a href="" class="footer__link no-cursor ">About</a>
+          <a href="" class="footer__link">Funko Pops</a>
+          <a href="" class="footer__link no-cursor ">Contact</a>
+        </div>
+        <div class="footer__copyright">Copyright &copy; 2021 Funko Pop Store</div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
